@@ -24,5 +24,6 @@ int musico_buscarID(Musico *arrayMusico, int len, int valorBuscado, int* posicio
 int musico_promedioSalarios(Musico *arrayMusico,int len);
 int musico_ordenarPorApellido(Musico *arrayMusico,int len,int orden);
 void musico_menu(Musico *arrayMusico,int len,char* opcionesMenu, char* msgErr);
+int musico_sortMusicoApellido(Musico *arrayMusico,int lenMusico,int order);
 
 #endif // MUSICO_H_INCLUDED

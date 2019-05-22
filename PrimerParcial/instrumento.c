@@ -171,6 +171,7 @@ int instrumento_baja(Instrumento *arrayInstrumento,int len)
         {
             arrayInstrumento[posicionDeLaCoincidencia].isEmpty=1;
             printf("se ha dado de baja el instrumento en la posicion %d\n",posicionDeLaCoincidencia);
+            ret=0;
         }
         else
         {
@@ -190,9 +191,24 @@ int instrumento_listar(Instrumento *arrayInstrumento,int len)
         {
             if(arrayInstrumento[i].isEmpty==0)
             {
-                    printf(" %s\n %d\n %d\n",arrayInstrumento[i].nombre
-                                            ,arrayInstrumento[i].idInstrumento
-                                            ,arrayInstrumento[i].tipo);
+                    printf(" %s\n %d\n",arrayInstrumento[i].nombre
+                                       ,arrayInstrumento[i].idInstrumento);
+
+                    switch(arrayInstrumento[i].tipo)
+                    {
+                        case 1:
+                            printf("\nCuerdas\n");
+                            break;
+                        case 2:
+                            printf("\nViento-Madera\n");
+                            break;
+                        case 3:
+                            printf("\nViento-Metal\n");
+                            break;
+                        case 4:
+                            printf("\nPercusion\n");
+                            break;
+                    }
             }
         }
         ret=0;

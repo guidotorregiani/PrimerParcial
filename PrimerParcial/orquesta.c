@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdio_ext.h>
 #include "orquesta.h"
+#include "musico.h"
 #include "utn.h"
 #define Nombre_LEN 51
 
@@ -174,6 +176,7 @@ int orquesta_modificar(Orquesta *arrayOrquesta,int len)
         {
             while(ready!=1)
             {
+                __fpurge(stdin);
                 getValidInt(&opcion,"Ingrese valor a modificar:\n 1 para nombre\n2 para lugar\n3para tipo\4 para salir","Error",1,4,3);
 
                 switch(opcion)
@@ -196,8 +199,9 @@ int orquesta_modificar(Orquesta *arrayOrquesta,int len)
     }return ret;
 }
 
-int orquesta_baja(Orquesta *arrayOrquesta,int len)
+int orquesta_baja(Orquesta *arrayOrquesta,int len,int* auxId)
 {
+
     int ret=-1;
     int idOrquesta;
     int posicionDeLaCoincidencia=0;
@@ -209,6 +213,8 @@ int orquesta_baja(Orquesta *arrayOrquesta,int len)
         {
             arrayOrquesta[posicionDeLaCoincidencia].isEmpty=1;
             printf("se ha dado de baja el orquesta en la posicion %d\n",posicionDeLaCoincidencia);
+            *auxId=idOrquesta;
+            ret=0;
         }
         else
         {
@@ -217,6 +223,24 @@ int orquesta_baja(Orquesta *arrayOrquesta,int len)
     }
     return ret;
 }
+int orquesta_bajaMusicos(Musico *arrayMusico, int len, int valorBuscado)
+{
+    int retorno=-1;
+    int i;
+    if(arrayMusico!=NULL && len>0)
+    {
+        for(i=0;i<len;i++)
+        {
+            if(arrayMusico[i].idOrquesta==valorBuscado)                                                        //cambiar si no se busca por ID
+            {
+                arrayMusico[i].isEmpty=1;
+            }
+        }
+        retorno=0;
+    }
+    return retorno;
+}
+
 
 int orquesta_listar(Orquesta *arrayOrquesta,int len)
 {
@@ -238,3 +262,36 @@ int orquesta_listar(Orquesta *arrayOrquesta,int len)
     }
     return ret;
 }
+
+/*int orquesta_sortOrquestaCantMusicos(Orquesta *arrayOrquesta,int lenOrquesta)
+{
+    int i;
+    int j;
+    Orquesta buffer;
+    int ret = -1;
+
+    if(arrayOrquesta != NULL && len > 0)
+    {
+        for(i=0;i<len-1;i++)
+        {
+            for(j=i+1;j<len;j++)
+            {
+                if((strcmp(arrayOrquesta[j].name,arrayOrquesta[i].name) < 0))
+                {
+                    buffer = arrayOrquesta[i];
+                    arrayOrquesta[i] = arrayOrquesta[j];
+                    arrayOrquesta[j] = buffer;
+                    ret = 0;
+                }
+                else if((strcmp(arrayOrquesta[j].name,arrayOrquesta[i].name) > 0))
+                {
+                    buffer = arrayOrquesta[i];
+                    arrayOrquesta[i] = arrayOrquesta[j];
+                    arrayOrquesta[j] = buffer;
+                    ret = 0;
+                }
+            }
+        }
+    }
+    return ret;
+}*/

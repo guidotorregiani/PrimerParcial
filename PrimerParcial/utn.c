@@ -53,6 +53,7 @@ int getString(char *pResult, char *pMsg, char *pMsgError, int min, int max, int 
     while(intentos>0)
     {
         printf(pMsg);
+        //__fpurge(stdin);
         __fpurge(stdin); //LIMPIA BUFFER LINUX
         fgets(arrayAuxiliar,sizeof(arrayAuxiliar),stdin);
         arrayAuxiliar[strlen(arrayAuxiliar)-1] = '\0';
