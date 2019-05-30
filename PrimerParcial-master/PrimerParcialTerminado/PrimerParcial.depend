@@ -1,0 +1,120 @@
+# depslib dependency file v1.0
+1558051603 source:/home/alumno/Documentos/Clase10/PrimerParcial/instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"instrumento.h"
+	"utn.h"
+
+1558047066 /home/alumno/Documentos/Clase10/PrimerParcial/instrumento.h
+
+1558045837 /home/alumno/Documentos/Clase10/PrimerParcial/utn.h
+
+1558051666 source:/home/alumno/Documentos/Clase10/PrimerParcial/main.c
+	<stdio.h>
+	<stdlib.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"utn.h"
+	<stdio_ext.h>
+
+1558047066 /home/alumno/Documentos/Clase10/PrimerParcial/orquesta.h
+
+1558048921 /home/alumno/Documentos/Clase10/PrimerParcial/musico.h
+
+1558048921 source:/home/alumno/Documentos/Clase10/PrimerParcial/musico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"utn.h"
+
+1558051603 source:/home/alumno/Documentos/Clase10/PrimerParcial/orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"utn.h"
+
+1558051482 source:/home/alumno/Documentos/Clase10/PrimerParcial/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"utn.h"
+
+1559235246 source:c:\users\guido\desktop\informesinc\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+	"utn.h"
+	"informes.h"
+
+1558580348 c:\users\guido\desktop\informesinc\musico.h
+
+1558580348 c:\users\guido\desktop\informesinc\orquesta.h
+	"musico.h"
+
+1558580348 c:\users\guido\desktop\informesinc\instrumento.h
+
+1558580348 c:\users\guido\desktop\informesinc\utn.h
+
+1559219893 c:\users\guido\desktop\informesinc\informes.h
+	"musico.h"
+	"instrumento.h"
+	"orquesta.h"
+	"utn.h"
+
+1558580348 source:c:\users\guido\desktop\informesinc\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"instrumento.h"
+	"utn.h"
+
+1559235154 source:c:\users\guido\desktop\informesinc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"utn.h"
+	"informes.h"
+
+1559230272 source:c:\users\guido\desktop\informesinc\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+	"utn.h"
+
+1559230297 source:c:\users\guido\desktop\informesinc\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"musico.h"
+	"utn.h"
+
+1559225177 source:c:\users\guido\desktop\informesinc\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+

@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1559255272 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/informes.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+	"utn.h"
+	"informes.h"
+
+1559239552 /home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/musico.h
+
+1559239552 /home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/orquesta.h
+	"musico.h"
+
+1559239552 /home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/instrumento.h
+
+1559239552 /home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/utn.h
+
+1559239552 /home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/informes.h
+	"musico.h"
+	"instrumento.h"
+	"orquesta.h"
+	"utn.h"
+
+1559239552 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"instrumento.h"
+	"utn.h"
+
+1559254901 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"utn.h"
+	"informes.h"
+	<stdio_ext.h>
+
+1559255055 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/musico.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+	"utn.h"
+
+1559255055 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"orquesta.h"
+	"musico.h"
+	"utn.h"
+
+1559255055 source:/home/alumno/Descargas/PrimerParcial-master/PrimerParcialTerminado/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"utn.h"
+

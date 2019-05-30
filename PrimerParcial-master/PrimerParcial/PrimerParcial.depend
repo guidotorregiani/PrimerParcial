@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1558051603 source:/home/alumno/Documentos/Clase10/PrimerParcial/instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"instrumento.h"
+	"utn.h"
+
+1558047066 /home/alumno/Documentos/Clase10/PrimerParcial/instrumento.h
+
+1558045837 /home/alumno/Documentos/Clase10/PrimerParcial/utn.h
+
+1558051666 source:/home/alumno/Documentos/Clase10/PrimerParcial/main.c
+	<stdio.h>
+	<stdlib.h>
+	"orquesta.h"
+	"musico.h"
+	"instrumento.h"
+	"utn.h"
+	<stdio_ext.h>
+
+1558047066 /home/alumno/Documentos/Clase10/PrimerParcial/orquesta.h
+
+1558048921 /home/alumno/Documentos/Clase10/PrimerParcial/musico.h
+
+1558048921 source:/home/alumno/Documentos/Clase10/PrimerParcial/musico.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"musico.h"
+	"utn.h"
+
+1558051603 source:/home/alumno/Documentos/Clase10/PrimerParcial/orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"utn.h"
+
+1558051482 source:/home/alumno/Documentos/Clase10/PrimerParcial/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdio_ext.h>
+	"utn.h"
+
