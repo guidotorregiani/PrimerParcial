@@ -204,4 +204,81 @@ int entregas_sortByName(void* pFirstEntregas,void* pSecondEntregas)
     return retorno;
 }
 
+int entrega_contarByTipoEXP(void* pFirstEntrega)
+{
+    int retorno = 0;
+    Entregas* pEntregas;
 
+    pEntregas = (Entregas*) pFirstEntrega;
+
+    if(strcmp(pEntregas->tipo,"EXP") == 0)
+    {
+        retorno = 1;///mayor el primero
+    }
+    return retorno;
+}
+
+int entrega_contarByTipoECO(void* pFirstEntrega)
+{
+    int retorno = 0;
+    Entregas* pEntregas;
+
+    pEntregas = (Entregas*) pFirstEntrega;
+
+    if(strcmp(pEntregas->tipo,"ECO") == 0)
+    {
+        retorno = 1;///mayor el primero
+    }
+
+    return retorno;
+}
+
+int entrega_contarCantidad(void* pFirstEntrega)
+{
+    int retorno = -1;
+    Entregas* pEntregas;
+    pEntregas = (Entregas*) pFirstEntrega;
+
+    if(pEntregas != NULL && pEntregas->cantidad >= 0)
+    {
+        retorno = pEntregas->cantidad;
+    }
+    else
+    {
+        retorno = 0;
+    }
+
+    return retorno;
+}
+
+int entrega_contarPeso(void* pFirstEntrega)
+{
+    int retorno = -1;
+    Entregas* pEntregas;
+    pEntregas = (Entregas*) pFirstEntrega;
+
+    if(pEntregas != NULL && pEntregas->peso >= 0)
+    {
+        retorno = pEntregas->peso;
+    }
+    else
+    {
+        retorno = 0;
+    }
+
+    return retorno;
+}
+
+int entrega_contarByTipoSTD(void* pFirstEntrega)
+{
+    int retorno = 0;
+    Entregas* pEntregas;
+
+    pEntregas = (Entregas*) pFirstEntrega;
+
+    if(strcmp(pEntregas->tipo,"STD") == 0)
+    {
+        retorno = 1;///mayor el primero
+    }
+    return retorno;
+}

@@ -59,4 +59,5 @@ int ll_map(LinkedList* this, int (*pFunc)(void*));
 int ll_reduce(LinkedList* this, int (*pFunc)(void*));
 int ll_filter(LinkedList* this, int (*pFunc)(void*));
 
-
+int ll_contar(LinkedList* this,int (*pFunc)(void*));
+int ll_contarFloat(LinkedList* this,int (*pFunc)(void*));

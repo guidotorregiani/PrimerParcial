@@ -25,5 +25,9 @@ int entregas_setPeso(Entregas* this,char* peso);
 int entregas_getPeso(Entregas* this,int* peso);
 
 int entregas_sortByName(void* pFirstEntregas,void* pSecondEntregas);
-
+int entrega_contarByTipoSTD(void* pEntrega);
+int entrega_contarByTipoEXP(void* pFirstEntrega);
+int entrega_contarByTipoECO(void* pFirstEntrega);
+int entrega_contarCantidad(void* pFirstEntrega);
+int entrega_contarPeso(void* pFirstEntrega);
 #endif // ENTREGAS_H_INCLUDED

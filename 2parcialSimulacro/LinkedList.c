@@ -564,6 +564,7 @@ int ll_map(LinkedList* this, int (*pFunc)(void*))
     int i;
     int ret=-1;
     void* auxElem;
+
     if(this!=NULL)
     {
         for(i=0;i<ll_len(this);i++)
@@ -596,7 +597,7 @@ int ll_reduce(LinkedList* this, int (*pFunc)(void*))
         {
             pElement = ll_get(this, i);
 
-            if(pElement != NULL && pFunc(pElement) == 0)
+            if(pElement != NULL && pFunc(pElement)==0)
             {
                 if(!ll_remove(this, i))
                 {
@@ -604,7 +605,6 @@ int ll_reduce(LinkedList* this, int (*pFunc)(void*))
                 }
             }
         }
-
         returnAux = 0;
     }
 
@@ -623,19 +623,56 @@ int ll_filter(LinkedList* this, int (*pFunc)(void*))
     int ret=-1;
     void* auxElement;
 
-    LinkedList* filteredLinkedlist=ll_newLinkedList();
-
     if(this!=NULL)
     {
+        LinkedList* filteredLinkedlist=ll_newLinkedList();
+
         for(i=0;i<ll_len(this);i++)
         {
             auxElement=ll_get(this,i);
             if(!pFunc(auxElement))
             {
                 ll_add(filteredLinkedlist,auxElement);
-                ret=0;
             }
         }
+        ret=0;
     }
     return ret;
+}
+
+
+int ll_contar(LinkedList* this,int (*pFunc)(void*)) ///necesito hacer funciones para contrar int y float
+{
+    int returnAux = -1;
+    int size;
+    int i;
+
+    size = ll_len(this);
+    if(this != NULL && pFunc != NULL)
+    {
+        returnAux = 0;
+        for(i=0; i<size; i++)
+        {
+            returnAux += pFunc(ll_get(this,i));
+        }
+    }
+    return returnAux;
+}
+
+int ll_contarFloat(LinkedList* this,int (*pFunc)(void*)) ///necesito hacer funciones para contrar int y float
+{
+    float returnAux = -1;
+    int size;
+    int i;
+
+    size = ll_len(this);
+    if(this != NULL && pFunc != NULL)
+    {
+        returnAux = 0;
+        for(i=0; i<size; i++)
+        {
+            returnAux += pFunc(ll_get(this,i));
+        }
+    }
+    return returnAux;
 }
