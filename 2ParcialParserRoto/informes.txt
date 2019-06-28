@@ -1,0 +1,8 @@
+*******************
+Informe de ventas
+*******************
+- Cantidad de fotos reveladas totales: 0
+- Cantidad de ventas por unmonto mayor a $150: 0
+- Cantidad de ventas por un monto mayor a $300: 0
+- Cantidad de fotos polaroids reveladas: 0
+*******************
